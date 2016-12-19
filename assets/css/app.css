@@ -1,0 +1,448 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.brand-logo{
+    font-size: 1.8em !important;
+}
+#loader{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+      width: 100% !important;
+    height: 100%;
+}
+#index{
+    background-color: #009789;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding-top: 1%;
+    min-height: 450px;
+    display: inline-table;
+    padding: 0 11px;
+}
+#index h2.center{
+    color: #fff;
+    font-weight: 300;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+#index .subtitulo{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+#logo{
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-top: -2%;
+}
+#login{
+    padding: 10px 30px;
+}
+.full_w{
+    width: 100%;
+}
+#login_form{
+        padding: 0px 24px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    border-radius: 4px;
+}
+#login_form p{
+    color: #fff;
+    text-align: center;
+    font-size: .95em;
+}
+/****************
+COMPLETAR DATOS
+****************/
+.titulo h2, .header_form h2{
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    margin-bottom: -8px;
+}
+.titulo p, .header_form p{
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 01;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+.completa_datos label{
+    color: #FFF;
+    font-weight: bold;
+}
+.completa_datos input, .completa_datos .select-wrapper input.select-dropdown{
+    border-color: #E8E8E8;
+     color: #FFF;
+}
+.completa_datos input.active {
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 0 1px 0 0 #E8E8E8;
+}
+.tut{
+    width: 80%;
+    margin-left: 10%;
+}
+.btn_notif{
+        float: right;
+    margin-top: 13px;
+}
+
+.header_form h2{
+    text-align: center;
+    font-size: 1.85em;
+    color: #444;
+    margin-bottom: -8px;
+}
+.header_form p{
+    text-align: center;
+    font-size: 1em;
+    line-height: 01;
+    color: #444;
+    margin-bottom: 20px;
+}
+/****************
+DASH
+****************/
+#dash{
+    padding-top: 10px;
+}
+#fav{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    width: 5em;
+    z-index: 5;
+    height: 5em;
+}
+#fav a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+}
+#fav i{
+    margin-top: 41.5%;
+}
+nav{
+        color: #fff;
+    background-color: #009688;
+    width: 100%;
+}
+nav .button-collapse{
+    margin-left: 8px;
+        font-size: 2.7rem;
+}
+nav li a i{
+        margin-right: 5px;
+}
+.side-nav{
+    overflow-y: hidden;
+        display: inline-table;
+}
+.side-nav li{
+    height: 50px;  
+    line-height: 50px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.side-nav a {
+    height: 50px;  
+    line-height: 50px;
+}
+#perfil{
+       height: 173px;
+    background-image: url("../img/wall_3.jpg");
+    background-size: cover;
+    margin-top: -17px;
+    padding-top: 9px;
+}
+#perfil img{
+    display: block;
+    margin:auto;
+    width: 100%;
+}
+#perfil .avatar{
+   width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+#perfil p{
+       color: #fff;
+    width: 100%;
+    margin-top: 9px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    line-height: 1;
+}
+#perfil .email{
+    font-size: .65em;
+}
+.editar_datos{
+    position: absolute;
+    right: 8px;
+    top: 106px;
+    color: #fff;
+}
+.editar_datos a{
+    width: 0;
+    height: 0;
+}
+.editar_datos a i{
+        color: #fff;
+    background: #F44336;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+}
+.carrera{
+    padding: 12px 2px;
+    color: #444;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 1.1em;
+}
+.carrera .dato, .carrera .dato_2{
+    font-size: .75em;
+    color: #444;
+}
+.carrera .dato_2{
+    text-align: center;
+}
+.text_right{
+    text-align: right;
+}
+.carrera .dato span{    
+    font-weight: bold;
+    display: inline-block;
+    /* width: 23px; */
+    margin-right: 8px;
+    line-height: 1.2;
+}
+.carrera .dato_2 span{    
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-right: 8px;
+
+}
+.carrera .fecha{
+    font-size: .75em;
+    color: #444;
+}
+
+.carrera .direccion{
+    margin-bottom: 3px;
+    font-size: 1em;
+}
+.carrera .direccion span{
+     display: block;
+    width: 100%;
+    font-size: 0.7em;
+    margin-bottom: -3px;
+    margin-top: 2px;
+}
+.carrera .calificacion{
+    font-size: .75em;
+    text-align: center;
+}
+.carrera .patente{
+    font-size: .75em;
+    text-align: left;
+}
+.carrera .valor{
+    font-size: .75em;
+    text-align: right;
+}
+.carrera .calificacion i{
+    margin-left: 5px;
+}
+.carrera .info_movil{
+    background: aliceblue;
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+}
+.carrera .info_movil span{
+display: block;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.carrera .info_movil .dato_movil{
+    font-size: .75em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+/****************
+nueva carrera
+****************/
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: calc(100%*3);
+    z-index: 99;
+    background: rgba(0,0,0,.6);
+    display: none;
+    visibility: hidden;
+
+}
+#overlay.active{
+    display: inline;
+    visibility: visible;
+}
+.dialogo{
+    position: absolute;
+    top: 6px;
+    width: 94%;
+    left: 110%;
+    z-index: 100;
+/*    
+    -webkit-transition: left 1 ease-in 0.1s;
+    -o-transition: left 1 ease-in 0.1s;
+    transition: left 1 ease-in 0.1s;
+    */
+    display: none;
+}
+.dialogo.active{
+    left: 3%;
+    display: block;
+}
+.dialogo h2{
+        margin-top: 13px;
+    font-size: 1.5em;
+}
+.close{
+        color: #444;
+    position: absolute;
+    top: 5px;
+    right: 11px;
+    font-size: 1.4em;
+}
+
+#loader_carrera{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fff;
+    display: none;
+}
+
+.tiempo_atencion_central{
+background: aliceblue;
+    padding-bottom: 9px !important;
+    margin-top: 6px;
+}
+.tiempo_atencion_central p{
+    font-size: 0.75em;
+}
+.tiempo_atencion_central p span{
+        margin-left: 10px;
+    font-weight: bold;
+}
+/******************
+Detalle carrera
+******************/
+.preloader-wrapper.active{
+    display: block;
+    margin: auto;
+    margin-top: 35.25%;
+}
+.detalle_carrera .row, .log_carrera .row{
+    padding: 5px;
+    padding-top: 10px;
+}
+.detalle_carrera .row .col{
+    padding: 0;
+}
+.detalle_carrera{
+    min-height: 125px;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+.detalle_carrera .separador{
+        border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    clear: both;
+    margin: 0 20px 0;
+    height: 14px;
+}
+.detalle_carrera span{
+   display: block;
+    width: 100%;
+    font-size: .7em;
+    font-weight: bold;
+    margin-bottom: -4px;
+
+}
+.detalle_carrera .col{
+    margin-bottom: 5px;
+}
+.detalle_carrera .accion{
+    margin-top: 20px;
+}
+
+
+/******************
+Carrera Activa
+******************/
+.modal h4{
+    font-size: 1.6em;
+}
+.titulo{
+    font-size: 2em;
+}
+.log_carrera{
+padding: 0px 20px;
+}
+.log_carrera .row{
+    height: 100px;
+    overflow-y: scroll;
+    font-size: .7em;
+}
+.log_carrera li span{
+        font-style: italic;
+    display: inline-block;
+    width: 43px;
+}
+.boton_dialogo{
+    border: 1px solid #dedede;
+    padding: 0 12px;
+    margin: 6px 7px;
+}
+
+
+
+
+/******************
+Calificar
+******************/
+.detalle_carrera h5{
+    margin-top: 0;
+    margin-bottom: -8px;
+}
+.detalle_carrera p{
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.fa-star{
+    color: #ff9800 !important;
+}
