@@ -31,6 +31,8 @@ if($OP["LEGAL_RECHAZA_CARR"]=="SI" or $arr['user_app_mail']!=""){
 	update("empresa",array("last_query"=>$NOW), array("id"=>$arr['id_emp']), array("limit"=>"1"), $mysqli);
 	echo "true";
 
+	update("carrera_estado_legaltaxi",array("estado"=>"1"), array("id_carrera"=>$id_carrera), array("limit"=>"1"), $mysqli);
+
 	if($OP['MANTIENE_LUGAR_SI_RECHAZA']=="SI"){
 		update("movil", array("estado_turno"=>"1", "t_cambio"=>$movil['anterior']),array("id"=>$arr['id_movil']), array("limit"=>"1"), $mysqli);
 	}

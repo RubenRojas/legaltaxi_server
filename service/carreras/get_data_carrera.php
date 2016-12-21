@@ -18,4 +18,5 @@ if($json_arr['carrera']['imgChofer'] == ""){
 	$json_arr['carrera']['imgChofer'] = "https://www.legaltaxi.cl/legaltaxi/assets/img/appicon_2.png";
 }
 
+
 echo json_encode($json_arr);
