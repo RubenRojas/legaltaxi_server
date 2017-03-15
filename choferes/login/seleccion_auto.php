@@ -24,7 +24,17 @@ $id_chofer = $arr['id'];
 $query = "select id, codigo from movil where id_emp='$id_emp' and codigo='$codigo' limit 1";
 $result = $mysqli->query($query);
 $arr = $result->fetch_assoc();
-$id_movil = $arr['id'];
+if($id_movil==""){
+	$id_movil = $arr['id'];	
+}
+else{
+	$query = "select id, codigo from movil where id='$id_movil' limit 1";
+	$result = $mysqli->query($query);
+	$arr = $result->fetch_assoc();
+	$codigo = $arr['codigo'];
+
+}
+
 
 
 
@@ -39,9 +49,9 @@ if($id_movil != ""){
 */	
 
 	if($id_chofer_actual==0 or $id_chofer_actual==$id_chofer or $estado_movil==4){
-
+		
 		update("movil",array("id_chofer"=>$id_chofer), array("id"=> $id_movil), array("limit"=>"1"), $mysqli);
-		update("movil", array("id_chofer"=>"0"), array("id_chofer"=>$id_chofer), array(), $mysqli);
+		
 		update("empresa",array("last_query"=>$NOW), array("id"=>$id_emp), array("limit"=>"1"), $mysqli);
 
 		

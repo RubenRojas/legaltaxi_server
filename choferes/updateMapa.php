@@ -12,7 +12,7 @@ include($baseDir."conexion.php");
 
 extract($_GET);
 
-$query = "select chofer.id, movil.codigo from chofer  inner join movil on movil.id_chofer = chofer.id where login='$login' and pass ='$pass' limit 1";
+$query = "select chofer.id, movil.codigo, movil.estado_turno from chofer  inner join movil on movil.id_chofer = chofer.id where login='$login' and pass ='$pass' limit 1";
 $result = $mysqli->query($query);
 $arr = $result->fetch_assoc();
 
@@ -21,6 +21,6 @@ mkdir($path);
 $path_file = $path."/ubicacion.txt";
 
 $myfile = fopen($path_file, "w+") or die("Unable to open file!");
-$txt = $lat.",".$lon."---".$arr['id']."---".$arr['codigo'];
+$txt = $lat.",".$lon."---".$arr['id']."---".$arr['codigo']."---".$arr['estado_turno'];
 fwrite($myfile, $txt);
 fclose($myfile);

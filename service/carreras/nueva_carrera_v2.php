@@ -84,6 +84,7 @@ $empresa = $result->fetch_assoc();
 		echo 'false';
 	}
 
-	
+	add_notifications("NUEVA CARRERA LEGALTAXI!!", $id_carrera, $empresa['id']);
+
 
 
